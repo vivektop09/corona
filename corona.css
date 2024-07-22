@@ -69,12 +69,12 @@ nav{ display: flex; }
 nav ul{background-color: #ed242e;  display: flex; place-content: center; font-weight: 300; z-index: inherit; }
         
  .tap{ font-weight: 600;}
- nav ul li{ line-height: 80px; margin-right: 20px; padding: 0 .3rem; margin: 0 .6rem; font-size: .9rem;} 
+ nav ul li{ line-height: 60px; margin-right: 20px; padding: 0 .3rem; margin: 0 .6rem; font-size: .9rem;} 
  a{ color: #fff; align-items: center; }
-.search{ margin: 2rem 2rem;  border: none; color: #fff; background-color: transparent;}
-.user{ margin: 2rem 2rem;  border: none; color: #fff; background-color: transparent;}
+.search{ margin: 0 1rem;  border: none; color: #fff; background-color: transparent;}
+.user{ margin: 0 1rem;  border: none; color: #fff; background-color: transparent;}
 .logo li{ position: absolute; background: #ed242e; z-index: -1; border-radius: 0 0 4rem 4rem; transform: translate(0, -46%);
- padding: 46px 29px; height: 1rem;}
+ padding: 40px 26px; height: 6rem;}
 .logo li img{ display: flex;}
 .banner img{ width: 100%; height: 100%; position: relative;}
 .span{ border: none; background: none; display: none;}
@@ -223,10 +223,10 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
 }
 
 
-@media screen and (max-width:980px) {
+@media screen and (max-width:800px) {
     html{font-size: 14px;}
     .col-3{ flex-basis: 25%; max-width: 25%; }
-    .hallo{ top: 36%; left: 8%; font-size: 2.8rem;}
+    .hallo{ top: 16%; left: 10%; font-size: 2.8rem;}
     .col-6{ flex-basis: 50%; max-width: 50%;}
     .btn_wrap-3, .btn_wrap-4, .btn-h500{ padding: 0.5rem 1.6rem;}
     .banner-wrap-3{ transform: translateY(-37%); width: 70%; height: 21rem; }
@@ -251,6 +251,8 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
     .end{ margin: 0 4rem;}
     .end p{font-size: 1rem;}
     .end h3{ font-size: 1.2rem;}
+
+    .left-1,.right-2{top: 20%; font-size: 1rem; padding: 1.4rem 0.8rem;}
     
     
     
@@ -368,15 +370,15 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
 
 
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:430px) {
     .col-m-12{ flex-basis: 100%; max-width: 100%;}
      html{font-size: 12px;}
     .col-12{ flex-basis: 100%; max-width: 100%;}
-    .hallo{ top: 19%; font-size: 2rem; left: 10%;}
+    .hallo{ top: 13%; font-size: 1.8rem; left: 11%;}
     .btn{margin: 0.7rem 0.3rem;}
     .btn1 .btn2{ font-size: 0.6rem; padding: 2px 6px;}
-    .banner-wrap-3{ transform: translateY(-23%);  width: 90%; place-content: center; text-align: center;}
-    .btn_wrap-3{ padding: 0.3rem 0.9rem;}
+    .banner-wrap-3{ transform: translateY(-23%);  width: 80%; place-content: center; text-align: center; height: 14rem;}
+    .btn_wrap-3{ padding: 0.3rem 0.9rem; margin-top: 1rem;}
     .h100{margin: 0 0 -2rem 2rem; }
      
     .h100 h2{ font-size: 1rem;}
@@ -393,7 +395,7 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
     .row{ flex-flow: column; }
     .btn-h600{ top: 30%; left: 39%;}
     .btn-h600{ font-size: 1rem;}
-    .logo-7{ left: 14rem; bottom: -3.5rem; padding: 1rem;}
+    .logo-7{ left: 12.5rem; bottom: -3.3rem; padding: 1rem;}
     .h600 p{ margin-bottom: 3rem;}
     .h600{ margin-bottom: 5rem;}
     .h700 h2{ font-size: 1.5rem; margin: 2rem; padding: 0;}
@@ -411,16 +413,18 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
     .end{ margin: -1rem 2rem;}
     .end p{ font-size: 1rem;}
 
-    .left-1,.right-2{top: 24%; font-size: 1rem;}
+    .left-1,.right-2{top: 14%; font-size: 1rem; padding: 1.4rem 0.8rem;}
+
+    
 
 
     
     
     
-@media screen and (max-width:320px){
-    .hallo{top: 17%; font-size: 1.4rem;}
-    .left-1,.right-2{ top: 18%; font-size: 0.8rem;}
-    .logo-7{ left: 9rem; bottom: -2rem; padding: 0.2rem;}
+@media screen and (max-width:390px){
+    .hallo{top: 15%; font-size: 1.4rem; left: 4rem;}
+    .left-1,.right-2{ top: 15%; font-size: 0.8rem; padding: 1.3rem 0.8rem;}
+    .logo-7{ left: 12rem; bottom: -3rem; padding: 1rem;}
     .btn-h600{ top: 28%; left: 36%;}
     .h700 h2{ font-size: 1.5rem; margin: 0; padding: 0;}
     .virus img , .virus-2{ display: none;}
@@ -431,9 +435,9 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
     .end h3{ font-size: 1rem;}
     .f200 p{ padding: 0;}
 
-    .h500-1{ margin: 4rem 5rem 7rem 5rem ;}
+    .h500-1{ margin: 4rem 8rem 7rem 8rem ;}
     .btn-h500-1{ margin: 1.8rem -3rem; padding: 0.5rem 1rem; font-size: 0.7rem;}
-    .h500{ border-radius: 20%; height: 20rem;}
+    .h500{ border-radius: 20%; height: 25rem;}
     .h200{ margin: 0 -3rem;}
     .banner-wrap-3{ padding: 3rem 1rem; width: 88%; height: 12rem;}
     .btn_wrap-3{ padding: 0.3rem 0.7rem; margin: 0;font-size: 0.7rem;}
