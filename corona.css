@@ -108,7 +108,7 @@ nav ul{background-color: #ed242e;  display: flex; place-content: center; font-we
 
 
 .wrap-5{ text-align: center; margin: 3rem;}
-.h500{ background-image: url(image\ 4.png);background-repeat: no-repeat; background-size: cover; border-radius: 100px; }
+.h500{ background-image: url(images/image-4.png);background-repeat: no-repeat; background-size: cover; border-radius: 100px; }
 .h500-1{ background: #fef6fc; border-radius: 10px; margin: 8rem 3rem; padding: 3rem;}
 .wrap-5 p{margin: 0 0 2rem; font-weight: 100;}
 .h500-1 h3{ font-weight: 700; margin: 1rem; font-size: 1rem; }
@@ -152,7 +152,7 @@ nav ul{background-color: #ed242e;  display: flex; place-content: center; font-we
 
 
 .wrap-11{ text-align: center; }
-.img-h100{ background-image: url(coronavirus-2.png); background-size: cover;  width: 100%; display: block;}
+.img-h100{ background-image: url(images/coronavirus-2.png); background-size: cover;  width: 100%; display: block;}
 .wrap-11 input{  background: none; border: 1px solid #fff;  line-height: 3rem; border-radius: 2rem;  margin-top: 5rem; width: 60%;}
 ::-webkit-input-placeholder{ color: #fff; padding: 2rem;}
 .btn-h100{background-color: #13135a; border: none; border-radius: 2rem; padding: 1rem 6rem; margin: 1.5rem; font-weight: 900; color: #fff; }
