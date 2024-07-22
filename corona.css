@@ -19,12 +19,12 @@ label{ display: block;}
 }
 @font-face {
     font-family: poppins;
-    src: url(Poppins/Poppins-Regular.ttf);
+    src: url(/Poppins/Poppins-Regular.ttf);
     font-weight: 400;
 }
 @font-face {
     font-family: poppins;
-    src: url(Poppins/Poppins-Light.ttf);
+    src: url(/Poppins/Poppins-Light.ttf);
     font-weight: 100;
 }
 
