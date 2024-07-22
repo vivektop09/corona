@@ -1,0 +1,454 @@
+*,::before,::after{margin: 0; box-sizing: border-box;}
+a{text-decoration: none;}
+img{vertical-align: bottom;}
+ul{list-style: none; padding: 0;}
+button{ cursor: pointer; padding: 0;}
+label{ display: block;}
+:disabled{ cursor: not-allowed;}
+
+
+@font-face {
+    font-family: poppins;
+    src: url(Poppins/Poppins-ExtraBold.ttf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: poppins;
+    src: url(Poppins/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: poppins;
+    src: url(Poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: poppins;
+    src: url(Poppins/Poppins-Light.ttf);
+    font-weight: 100;
+}
+
+html{
+    font-size: 15px;
+    --ff: poppins,sens-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top:80px;
+}
+
+body{ font: 16px/1.3 var(--ff)}
+
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+.row{
+    display: flex;}
+    [class^="col-"]{ flex: 1 0 auto; padding: 0 3rem;}
+    .col-1{ flex-basis: 8.33%; max-width: 8.33%; }
+    .col-2{ flex-basis: 16.66%; min-width: 16.66%;}
+    .col-3{ flex-basis: 25%; max-width: 25%; }
+    .col-4{ flex-basis: 33.3336%; max-width: 33.3336%;}
+    .col-5{ flex-basis: 41.66%; max-width: 41.66%;}
+    .col-6{ flex-basis: 50%; max-width: 50%;}
+    .col-7{ flex-basis: 58.33%; max-width: 58.33%;}
+    .col-8{ flex-basis: 66.66%; max-width: 66.66%;}
+    .col-9{ flex-basis: 75%; max-width: 75%;}
+    .col-10{ flex-basis: 83.33%; max-width: 83.33%;}
+    .col-11{ flex-basis: 91.66%; max-width: 91.66%;}
+    .col-12{ flex-basis: 100%; max-width: 100%;}
+    .col-auto{ flex-basis: 20%; max-width: 20%;}
+.flex{display: flex;}
+.justify-space-between{ justify-content: space-between;}
+.justify-center{ justify-content: center;}
+
+header{background: #00132b; position: sticky;  top: 0;  z-index: 1;}
+nav{ display: flex; }
+nav ul{background-color: #ed242e;  display: flex; place-content: center; font-weight: 300; z-index: inherit; }
+        
+ .tap{ font-weight: 600;}
+ nav ul li{ line-height: 80px; margin-right: 20px; padding: 0 .3rem; margin: 0 .6rem; font-size: .9rem;} 
+ a{ color: #fff; align-items: center; }
+.search{ margin: 2rem 2rem;  border: none; color: #fff; background-color: transparent;}
+.user{ margin: 2rem 2rem;  border: none; color: #fff; background-color: transparent;}
+.logo li{ position: absolute; background: #ed242e; z-index: -1; border-radius: 0 0 4rem 4rem; transform: translate(0, -46%);
+ padding: 46px 29px; height: 1rem;}
+.logo li img{ display: flex;}
+.banner img{ width: 100%; height: 100%; position: relative;}
+.span{ border: none; background: none; display: none;}
+.span span{ margin: 6px; color: #ffffff; width: 32px; height: 2px; background-color: #fff; display: flex; flex-flow: column; }
+.hallo{ position: absolute; top: 55%; left: 11%; font-weight: 700; color: #fff; font-size: 4rem; line-height: .9;}
+.btn{ margin: 1rem 0;} 
+.btn1{ background: red; color: #fff; padding: 0.7rem 2rem; border: none;}
+.btn2{ background: #fff; color: #0f0f0f; padding: 0.7rem 2.1rem; border: none;}
+
+
+.left-1{ border-radius:0 150px 150px 0;  background-color: #ed242e; padding: 2rem 1rem 2rem 1rem; border: none; color: #fff; position: absolute; top: 46%; left: 0; font-size: 1.5rem;}
+.right-2{border-radius: 150px 0px 0px 150px; background-color: #ed242e; padding: 2rem 1rem 2rem 1rem; border: none; color: #fff; position: absolute; top: 46%; right:0;  font-size: 1.5rem;} 
+
+
+.banner-wrap-3{ width: 80%; box-shadow: 0 0 33px #000; display: flex; align-items: center; margin: 0 auto;
+                 border-radius: 54px 54px; position: relative;
+                transform: translateY(-40%); background: #fff; height: 25rem;}
+/* .h200 img{ width: 100%;} */
+.h200 img{ width: 80%; }
+.h100{ margin: 14px 0px 10px 30px; }
+.hii{ background: red; margin: 3px 0px; padding: 4px 25px; display: inline-block; border-radius: 5px; }
+.h100 p{ font-size: 1rem;} 
+.btn_wrap-3{ background-color: #13135a; color: #fff; padding: 8px 30px; margin-top: 30px; border: none; border-radius: 10px; }
+.btn_wrap-4{ background-color: #13135a; color: #fff; padding: 8px 30px; margin-top: 30px; border: none;  }
+
+
+.flex{ place-items: center;}
+.h300{ margin-right: 1rem;}
+.h300 img{ width: 100%; padding: 0 0 0 8rem;}
+.h400 h2{ margin: 0 0 1rem;}
+
+
+.wrap-5{ text-align: center; margin: 3rem;}
+.h500{ background-image: url(image\ 4.png);background-repeat: no-repeat; background-size: cover; border-radius: 100px; }
+.h500-1{ background: #fef6fc; border-radius: 10px; margin: 8rem 3rem; padding: 3rem;}
+.wrap-5 p{margin: 0 0 2rem; font-weight: 100;}
+.h500-1 h3{ font-weight: 700; margin: 1rem; font-size: 1rem; }
+.h500-1 p{ font-weight: 100; font-size: 13px; margin: 20px 0 0;}
+.btn-h500{background-color: #13135a; color: #fff; padding: 8px 30px;
+           position: absolute; margin: 5rem -4rem; border: none; }
+.btn-h500-1{background-color: #ed1c24; color: #fff; padding: 8px 30px;
+    position: absolute; margin: 5rem -4rem; border: none;}
+           
+.cricle-btn{margin: -2.2rem 0;}
+.cricle-btn-1{ border: none; padding: 1.7rem; border-radius: 50%;}
+.cricle-btn-2{ border: none; background: #ed1c24; padding: 1.7rem; border-radius: 50%;}
+
+
+.wrap-6{ text-align: center; margin: 8rem 1rem 2rem;}
+.wrap-6 p{ width: 60%; margin: auto; margin-top: 1rem;}
+
+
+
+.wrap-7 img{ width: 100%;}
+.h600{ padding: 0.6rem; box-shadow: 0 0 20px #aaaaaa; margin: 0.8rem; position: relative;}
+.h600 h2{ text-align: center; margin: 1rem 0 0;}
+.h600 p{ text-align: center; font-weight: 200; font-size: 1rem; margin: 0 0 3rem;}
+.btn-h600{background-color: #ed1c24; color: #fff; padding: 8px 30px;
+    position: absolute; border: none; top: 24%; left: 35%; }
+
+.logo-7{ width: 20%; position: absolute; left: 10rem; bottom: -2.5rem;}
+
+.h700 h2{ text-align: center; margin: 5rem;}
+
+.wrap-9{ margin: 0 auto; text-align: center; }
+.h800 img{ border-radius: 50%; width: 6rem; height: 6rem; transform: translateY(-65%);}
+.h800{padding: 0.6rem; box-shadow: 0 0 20px #e4e3e3; margin: 0.6rem; font-weight: 300;}
+.h800 p{ padding: 1rem; font-size: 1rem;}
+
+
+
+.h900{ margin: 9rem -6rem 0; text-align: center; font-size: 1.5rem;}
+.virus img{ width: 100%; margin: 4rem 0 0 -7rem;}
+.virus-2 img{  width: 100%; padding: 2rem;} 
+
+
+.wrap-11{ text-align: center; }
+.img-h100{ background-image: url(coronavirus-2.png); background-size: cover;  width: 100%; display: block;}
+.wrap-11 input{  background: none; border: 1px solid #fff;  line-height: 3rem; border-radius: 2rem;  margin-top: 5rem; width: 60%;}
+::-webkit-input-placeholder{ color: #fff; padding: 2rem;}
+.btn-h100{background-color: #13135a; border: none; border-radius: 2rem; padding: 1rem 6rem; margin: 1.5rem; font-weight: 900; color: #fff; }
+
+footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
+.end{display: flex; margin: 3rem 3rem 3rem 9rem; text-align: left;}
+.end h3{ margin: 0.6rem 0; }
+
+
+.f400 img{ width: 100%;}
+.f100 p{font-weight: 100; font-size: 1rem;}
+
+.f200 p{font-weight: 100; font-size: 1rem; padding: 0 2rem 0 0}
+.f300 p{font-weight: 100; font-size: 14px; }
+.hr-1{ width: 50%; margin: 1rem auto;}
+.para{ text-align: center; font-weight: 100;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1220px){
+    
+     html{ font-size: 15px;}
+    .hallo{ top: 39%; font-size: 3rem;}
+    .banner-wrap-3{ transform: translateY(-37%); width: 70%; height: 22rem;}
+    .hii{ padding: 0.3rem 1.3rem }
+    .btn_wrap-3, .btn_wrap-4{ padding: 0.5rem 2rem; font-size: 0.8rem;}
+    .h400{ font-size: 1rem;}
+    .h300 img{ padding: 0 0 0 7rem;}
+    .h500{ height: 30rem; }
+    .h500 h3{ margin: 0;}
+    .h500-1{ padding: 1rem;}
+    .btn-h500, .btn-h500-1{ margin: 3rem -4rem;}
+    .h500-1 h3{ margin: 1rem; font-size: 0.8rem;}
+    .h500-1 p{ font-size: 0.8rem; font-weight: 200;}
+    .wrap-5{ margin: 2rem;}
+
+    .btn-h600{ top: 23%; left: 32%;}
+    .h600{ margin: 0.4rem;}
+    .h600 p{ font-size: 0.9rem;}
+    .h600 h2{ font-size: 1.5rem;}
+    .wrap-7{ margin: 1rem;}
+
+    .logo-7{ left: 8.5rem; bottom: -2rem;}
+    .h700 h2{ margin: 5rem;}
+    .h800 p{ padding: 1rem;}
+    .h900{margin: 7rem -6rem 0;}
+    .end{ margin: 1rem 3rem 4rem 5rem;}
+    
+
+      
+    
+}
+
+
+@media screen and (max-width:980px) {
+    html{font-size: 14px;}
+    .col-3{ flex-basis: 25%; max-width: 25%; }
+    .hallo{ top: 36%; left: 8%; font-size: 2.8rem;}
+    .col-6{ flex-basis: 50%; max-width: 50%;}
+    .btn_wrap-3, .btn_wrap-4, .btn-h500{ padding: 0.5rem 1.6rem;}
+    .banner-wrap-3{ transform: translateY(-37%); width: 70%; height: 21rem; }
+    .h100 h2{font-size: 1.5rem;}
+    .h200 p{ font-size: 1rem;}
+    .hii{ padding: 0.3rem 1.3rem }
+    .h400{ margin: -2rem; font-size: 0.9rem;}
+    .h300 img{ padding: 0 0 0 3rem;}
+    .h500-1{ padding: 1rem; margin: 0 1rem;}
+    .warp-5{ margin: 1rem;}
+    .wrap-7{ margin: 1rem;}
+    .btn-h600{ top: 25%; left: 26%;}
+    .h600 p{ font-size: 0.9rem;}
+    .h600 h2{ font-size: 1.5rem;}
+
+    .logo-7{ left: 8rem; bottom: -2rem;}
+    .h700 h2{font-size: 1.5rem; }
+    .h800 p{ padding: 1rem;}
+    .wrap-11 input{ margin-top: 3rem;}
+    .btn-h100{ margin: 1rem 0 1rem 0;}
+
+    .end{ margin: 0 4rem;}
+    .end p{font-size: 1rem;}
+    .end h3{ font-size: 1.2rem;}
+    
+    
+    
+
+
+    
+    
+    
+}
+
+
+@media screen and (max-width:768px) {
+    .col-m-6{ flex-basis: 50%; max-width: 50%;}
+
+     html{font-size: 13px;}
+    .span{ display: block; margin: 1rem; border-radius:10px; color: #fff;}
+     nav ul{display: none;}
+    .hallo{ font-size: 2.7rem; top: 30%; left: 12%; }
+    .btn1, .btn2{ padding: 5px 10px; font-size: 0.9rem; }
+    .hii{ padding: 0.3rem 1.3rem  }
+    /* .btn_wrap-3{ } */
+    .h400{ font-size: 0.9rem; margin: 1rem;}
+    .h300 img{ padding: 0 0 0 3rem;}
+    .wrap-5{ margin: 5rem 1.5rem;}
+    .btn-h500,.btn-h500-1{ margin: 2rem -4rem;}
+    .h500-1{ padding: 0; margin: 1rem;}
+    .h500-1 img{ padding: 1rem;}
+
+    .wrap-6 p{ width: 100%; font-size: 1rem;}
+
+
+    .wrap-7{ margin: 1rem;}
+    .btn-h600{ top: 21%; left: 25%;}
+    .h600 p{ font-size: 0.9rem; margin-bottom: 1.7rem;}
+    .h600 h2{ font-size: 1.5rem;}
+    .btn-h600{ font-size: 0.8rem;}
+
+    .logo-7{ left: 7rem; bottom: -1.8rem;}
+    .h700 h2{ font-size: 1.5rem; }
+
+    .h800 p{ padding: 1rem; font-size: 0.9rem; }
+    .h900{margin: 5rem -4rem 0;}
+
+    .end{ flex-flow: wrap; padding: 0; margin: 0  4rem;}
+    .f300,.f400{ margin-top: 3rem}
+    .f300 p{ font-size: 1.5rem;}
+    .f300 h3{ font-size: 2rem;}
+    .f100 p{ font-size: 1.5rem;}
+    .f200 p{ font-size: 1.5rem;}
+    .f200 h3{ font-size: 2rem;}
+    .f100 h3{ font-size: 2rem;}
+    .f400 h3{font-size: 2rem;}
+    .f400 img{ padding: 1rem;}
+    .para{font-size: 0.8rem;}
+    
+    
+    
+    
+
+    
+
+    
+}
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .hallo{ top: 23%; left: 12%; font-size: 2.5rem; }
+    .btn1, .btn2{ padding: 5px 7px; font-size: 0.7rem; }
+    .col-6{ flex-basis: 50%; max-width: 50%;}
+   
+    .h400{ font-size: 0.8rem; margin: 0;}
+    .btn_wrap-4{ font-size: 0.6rem; margin: 0.7rem 0}
+    .h300 img{ padding: 0 0 0 1.4rem;}
+    .wrap-5 p{ font-size: 1rem;}
+    .wrap-5 h2{ font-size: 1.6rem;}
+    .h500-1 p{ margin: 1rem 1rem; font-size: 0.8rem;} 
+    .h500-1{ margin: 0.3rem;}
+    .h500-1 img{ padding: 1.5rem;}
+    .h500{ margin: 0 -2rem;}
+    .btn-h500-1{ margin: 2rem -5rem;}
+    .wrap-6 p{ width: 100%; font-size: 1rem;}
+    .wrap-6 h2{ font-size: 1.5rem;}
+
+
+    
+    .wrap-7{ margin: 1rem;}
+    .btn-h600{ top: 18%; left: 23%;}
+    .h600 p{ font-size: 0.9rem; margin-bottom: 1rem;}
+    .h600 h2{ font-size: 1rem;}
+    .btn-h600{ font-size: 0.7rem; padding: 0.6rem 1.8rem; }
+    
+    .logo-7{ left: 5.5rem; bottom: -1.5rem;}
+    .h700{ font-size: 1.5rem;}
+    .h800 p{ font-size: 0.7rem;}
+    .h800 h3{ margin-top: -3rem; font-size: 0.9rem}
+    .h800 img{ padding: 0.5rem;}
+    .h900{margin: 4rem -3rem 0;}
+    .wrap-11 input{ margin-top: 2rem;}
+    .btn-h100{ padding: 0.4rem; font-size: 0.9rem;}
+    .end{ margin: 0 2rem;}
+    .end p{ font-size: 1.3rem;}
+    .end h3{ font-size: 1.5rem;}
+
+    
+
+
+    
+}
+
+
+
+
+@media screen and (max-width:480px) {
+    .col-m-12{ flex-basis: 100%; max-width: 100%;}
+     html{font-size: 12px;}
+    .col-12{ flex-basis: 100%; max-width: 100%;}
+    .hallo{ top: 19%; font-size: 2rem; left: 10%;}
+    .btn{margin: 0.7rem 0.3rem;}
+    .btn1 .btn2{ font-size: 0.6rem; padding: 2px 6px;}
+    .banner-wrap-3{ transform: translateY(-23%);  width: 90%; place-content: center; text-align: center;}
+    .btn_wrap-3{ padding: 0.3rem 0.9rem;}
+    .h100{margin: 0 0 -2rem 2rem; }
+     
+    .h100 h2{ font-size: 1rem;}
+    .h400{ font-size: 0.6rem; margin: -1rem;}
+    .btn_wrap-4{ font-size: 0.5rem; margin: 0.7rem 0}
+    .h300 img{ padding: 0;}
+    .wash{display: none;}
+    .h500-1{ padding: 1rem; margin: 7rem;}
+    .btn-h500{ margin: 3rem -4.5rem;}
+    .h500-1{ padding: 1rem 0;}
+    .h500-1 img{ padding: 0}
+    .cricle-btn-1,.cricle-btn-2{padding: 1rem }
+    .cricle-btn{margin: -1.5rem 0;}
+    .row{ flex-flow: column; }
+    .btn-h600{ top: 30%; left: 39%;}
+    .btn-h600{ font-size: 1rem;}
+    .logo-7{ left: 14rem; bottom: -3.5rem; padding: 1rem;}
+    .h600 p{ margin-bottom: 3rem;}
+    .h600{ margin-bottom: 5rem;}
+    .h700 h2{ font-size: 1.5rem; margin: 2rem; padding: 0;}
+     
+    .wrap-9{ margin: 3rem 1rem;}
+    .h800{ margin: 2rem 0;}
+    .h800 p{ font-size: 1.5rem; padding: 3rem;}
+    .h800 h3{ margin: -2rem; font-size: 1.3rem}
+    .h800 img{ padding: 0.5rem;}
+    .virus,.virus-2{ display: none;}
+    .h900{margin: -3rem 3rem 0; font-size: 1.2rem;}
+    .wrap-11 input{ margin: 1rem 0 0 0;}
+    .btn-h100{ padding: 0.4rem; font-size: 0.9rem;}
+
+    .end{ margin: -1rem 2rem;}
+    .end p{ font-size: 1rem;}
+
+    .left-1,.right-2{top: 24%; font-size: 1rem;}
+
+
+    
+    
+    
+@media screen and (max-width:320px){
+    .hallo{top: 17%; font-size: 1.4rem;}
+    .left-1,.right-2{ top: 18%; font-size: 0.8rem;}
+    .logo-7{ left: 9rem; bottom: -2rem; padding: 0.2rem;}
+    .btn-h600{ top: 28%; left: 36%;}
+    .h700 h2{ font-size: 1.5rem; margin: 0; padding: 0;}
+    .virus img , .virus-2{ display: none;}
+    .h800 p{ font-size: 1rem; padding: 2rem;}
+    .h800 h3{ margin: -3rem 0 -1rem; font-size: 1.3rem}
+    .h900{ font-size: 1rem;}
+    .end{margin: 0; padding: 0;}
+    .end h3{ font-size: 1rem;}
+    .f200 p{ padding: 0;}
+
+    .h500-1{ margin: 4rem 5rem 7rem 5rem ;}
+    .btn-h500-1{ margin: 1.8rem -3rem; padding: 0.5rem 1rem; font-size: 0.7rem;}
+    .h500{ border-radius: 20%; height: 20rem;}
+    .h200{ margin: 0 -3rem;}
+    .banner-wrap-3{ padding: 3rem 1rem; width: 88%; height: 12rem;}
+    .btn_wrap-3{ padding: 0.3rem 0.7rem; margin: 0;font-size: 0.7rem;}
+    .banner-wrap-3 p{ font-size: 0.7rem;}
+    .h100 h2{ font-size: 0.8rem;}
+    .h100{ margin: 0 0 0 1rem;}
+    .h500-1 img{ padding: 1rem;margin: -1rem;}
+    .h500-1 p{ margin: 0;}
+    .h500-1 h3{ margin: 0.6rem;}
+    .wrap-6{ margin-top: 0;}
+    .row{ margin: -1rem;}
+    
+    
+}
+
+}
+
+
