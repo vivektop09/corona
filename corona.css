@@ -44,8 +44,7 @@ body{ font: 16px/1.3 var(--ff)}
     margin: auto;
     padding: 0 1rem;
 }
-.row{
-    display: flex;}
+.row{display: flex;}
     [class^="col-"]{ flex: 1 0 auto; padding: 0 3rem;}
     .col-1{ flex-basis: 8.33%; max-width: 8.33%; }
     .col-2{ flex-basis: 16.66%; min-width: 16.66%;}
@@ -64,29 +63,30 @@ body{ font: 16px/1.3 var(--ff)}
 .justify-space-between{ justify-content: space-between;}
 .justify-center{ justify-content: center;}
 
+
 header{background: #00132b; position: sticky;  top: 0;  z-index: 1;}
 nav{ display: flex; }
-nav ul{background-color: #ed242e;  display: flex; place-content: center; font-weight: 300; z-index: inherit; }
-        
- .tap{ font-weight: 600;}
- nav ul li{ line-height: 60px; margin-right: 20px; padding: 0 .3rem; margin: 0 .6rem; font-size: .9rem;} 
- a{ color: #fff; align-items: center; }
-.search{ margin: 0 1rem;  border: none; color: #fff; background-color: transparent;}
-.user{ margin: 0 1rem;  border: none; color: #fff; background-color: transparent;}
+nav ul{background-color: #ed242e;  display: flex; place-content: center; font-weight: 300; z-index: inherit; }     
+.tap{ font-weight: 600;}
+nav ul li{ line-height: 60px; margin-right: 20px; padding: 0 .3rem; margin: 0 .6rem; font-size: .9rem;} 
+nav a{ color: #fff; align-items: center; }
+
+.search{ margin: 1rem 1rem;  border: none; color: #fff; background-color: transparent;}
+.user{ margin: 1rem 1rem;  border: none; color: #fff; background-color: transparent;}
 .logo li{ position: absolute; background: #ed242e; z-index: -1; border-radius: 0 0 4rem 4rem; transform: translate(0, -46%);
  padding: 40px 26px; height: 6rem;}
 .logo li img{ display: flex;}
 .banner img{ width: 100%; height: 100%; position: relative;}
-.span{ border: none; background: none; display: none;}
-.span span{ margin: 6px; color: #ffffff; width: 32px; height: 2px; background-color: #fff; display: flex; flex-flow: column; }
-.hallo{ position: absolute; top: 55%; left: 11%; font-weight: 700; color: #fff; font-size: 4rem; line-height: .9;}
-.btn{ margin: 1rem 0;} 
+.nav-bar{ border: none; background: none; display: none;}
+.nav-bar span{ margin: 6px; color: #ffffff; width: 32px; height: 2px; background-color: #fff; display: flex; flex-flow: column; }
+.hallo{ position: absolute; top: 40%; left: 11%; font-weight: 700; color: #fff; font-size: 4rem; line-height: .9;}
+.btn{ margin: 5px 11px;} 
 .btn1{ background: red; color: #fff; padding: 0.7rem 2rem; border: none;}
 .btn2{ background: #fff; color: #0f0f0f; padding: 0.7rem 2.1rem; border: none;}
 
 
-.left-1{ border-radius:0 150px 150px 0;  background-color: #ed242e; padding: 2rem 1rem 2rem 1rem; border: none; color: #fff; position: absolute; top: 46%; left: 0; font-size: 1.5rem;}
-.right-2{border-radius: 150px 0px 0px 150px; background-color: #ed242e; padding: 2rem 1rem 2rem 1rem; border: none; color: #fff; position: absolute; top: 46%; right:0;  font-size: 1.5rem;} 
+.left-1{ border-radius:0 150px 150px 0;  background-color: #ed242e; padding: 2rem 1rem 2rem 1rem; border: none; color: #fff; position: absolute; top: 50%; left: 0; font-size: 1.5rem;}
+.right-2{border-radius: 150px 0px 0px 150px; background-color: #ed242e; padding: 2rem 1rem 2rem 1rem; border: none; color: #fff; position: absolute; top: 50%; right:0;  font-size: 1.5rem;} 
 
 
 .banner-wrap-3{ width: 80%; box-shadow: 0 0 33px #000; display: flex; align-items: center; margin: 0 auto;
@@ -94,7 +94,7 @@ nav ul{background-color: #ed242e;  display: flex; place-content: center; font-we
                 transform: translateY(-40%); background: #fff; height: 25rem;}
 /* .h200 img{ width: 100%;} */
 .h200 img{ width: 80%; }
-.h100{ margin: 14px 0px 10px 30px; }
+.h100{ margin: 35px 0px 10px 90px; }
 .hii{ background: red; margin: 3px 0px; padding: 4px 25px; display: inline-block; border-radius: 5px; }
 .h100 p{ font-size: 1rem;} 
 .btn_wrap-3{ background-color: #13135a; color: #fff; padding: 8px 30px; margin-top: 30px; border: none; border-radius: 10px; }
@@ -191,7 +191,7 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
 @media screen and (max-width:1220px){
     
      html{ font-size: 15px;}
-    .hallo{ top: 39%; font-size: 3rem;}
+    .hallo{ top: 60%; font-size: 3rem;}
     .banner-wrap-3{ transform: translateY(-37%); width: 70%; height: 22rem;}
     .hii{ padding: 0.3rem 1.3rem }
     .btn_wrap-3, .btn_wrap-4{ padding: 0.5rem 2rem; font-size: 0.8rem;}
@@ -223,10 +223,10 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
 }
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:980px) {
     html{font-size: 14px;}
     .col-3{ flex-basis: 25%; max-width: 25%; }
-    .hallo{ top: 16%; left: 10%; font-size: 2.8rem;}
+    .hallo{ top: 40%; left: 13%; font-size: 2.8rem;}
     .col-6{ flex-basis: 50%; max-width: 50%;}
     .btn_wrap-3, .btn_wrap-4, .btn-h500{ padding: 0.5rem 1.6rem;}
     .banner-wrap-3{ transform: translateY(-37%); width: 70%; height: 21rem; }
@@ -252,7 +252,7 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
     .end p{font-size: 1rem;}
     .end h3{ font-size: 1.2rem;}
 
-    .left-1,.right-2{top: 20%; font-size: 1rem; padding: 1.4rem 0.8rem;}
+    .left-1,.right-2{top: 46%; font-size: 2rem; padding: 1.4rem 0.8rem;}
     
     
     
@@ -268,12 +268,13 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
     .col-m-6{ flex-basis: 50%; max-width: 50%;}
 
      html{font-size: 13px;}
-    .span{ display: block; margin: 1rem; border-radius:10px; color: #fff;}
-     nav ul{display: none;}
+    .nav-bar{ display: block; margin: 1rem; border-radius:10px; color: #fff;}
+    .drop{  position: absolute; display: none; left: 20px; top: 5rem;}
+    /* .drop.showNav{display: block; } */
+     nav ul li { line-height: 50px; }
     .hallo{ font-size: 2.7rem; top: 30%; left: 12%; }
-    .btn1, .btn2{ padding: 5px 10px; font-size: 0.9rem; }
+    .btn1, .btn2{ padding: 7px 14px; font-size: 0.9rem; }
     .hii{ padding: 0.3rem 1.3rem  }
-    /* .btn_wrap-3{ } */
     .h400{ font-size: 0.9rem; margin: 1rem;}
     .h300 img{ padding: 0 0 0 3rem;}
     .wrap-5{ margin: 5rem 1.5rem;}
@@ -307,15 +308,21 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
     .f400 h3{font-size: 2rem;}
     .f400 img{ padding: 1rem;}
     .para{font-size: 0.8rem;}
-    
-    
-    
-    
 
-    
+    .left-1,.right-2{ top: 35%;}
 
-    
+    .h100{ margin: 35px 0 10px 43px;}
 }
+
+    
+    
+    
+    
+
+    
+
+    
+
 
 
 
@@ -324,8 +331,9 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
 
 
 @media screen and (max-width:600px) {
-    .hallo{ top: 23%; left: 12%; font-size: 2.5rem; }
-    .btn1, .btn2{ padding: 5px 7px; font-size: 0.7rem; }
+    .hallo{ top: 26%; left: 12%; font-size: 2rem; }
+    .btn1, .btn2{ padding: 6px 15px; font-size: 0.7rem;}
+    .btn{margin: 7px 5px;}
     .col-6{ flex-basis: 50%; max-width: 50%;}
    
     .h400{ font-size: 0.8rem; margin: 0;}
@@ -336,7 +344,7 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
     .h500-1 p{ margin: 1rem 1rem; font-size: 0.8rem;} 
     .h500-1{ margin: 0.3rem;}
     .h500-1 img{ padding: 1.5rem;}
-    .h500{ margin: 0 -2rem;}
+    .h500{ margin: 0 -2rem; padding: 2rem;}
     .btn-h500-1{ margin: 2rem -5rem;}
     .wrap-6 p{ width: 100%; font-size: 1rem;}
     .wrap-6 h2{ font-size: 1.5rem;}
@@ -361,6 +369,12 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
     .end p{ font-size: 1.3rem;}
     .end h3{ font-size: 1.5rem;}
 
+    .h100{ margin: 35px 0 10px 24px;}
+    .btn_wrap-3{ margin-top: 1rem;}
+    .banner-wrap-3{ width: 80%; height: 17rem;}
+    .left-1,.right-2{ top: 28%;}
+    
+
     
 
 
@@ -374,7 +388,7 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
     .col-m-12{ flex-basis: 100%; max-width: 100%;}
      html{font-size: 12px;}
     .col-12{ flex-basis: 100%; max-width: 100%;}
-    .hallo{ top: 13%; font-size: 1.8rem; left: 11%;}
+    .hallo{ top: 17%; font-size: 1.8rem; left: 11%;}
     .btn{margin: 0.7rem 0.3rem;}
     .btn1 .btn2{ font-size: 0.6rem; padding: 2px 6px;}
     .banner-wrap-3{ transform: translateY(-23%);  width: 80%; place-content: center; text-align: center; height: 14rem;}
@@ -413,18 +427,18 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
     .end{ margin: -1rem 2rem;}
     .end p{ font-size: 1rem;}
 
-    .left-1,.right-2{top: 14%; font-size: 1rem; padding: 1.4rem 0.8rem;}
-
+    .left-1,.right-2{top: 23%; font-size: 1rem; padding: 1.4rem 0.8rem;}
+    .btn1, .btn2{ padding: 4px 7px; font-size: 0.7rem;}
     
 
 
     
     
     
-@media screen and (max-width:390px){
+@media screen and (max-width:320px){
     .hallo{top: 15%; font-size: 1.4rem; left: 4rem;}
     .left-1,.right-2{ top: 15%; font-size: 0.8rem; padding: 1.3rem 0.8rem;}
-    .logo-7{ left: 12rem; bottom: -3rem; padding: 1rem;}
+    .logo-7{ left: 9rem; bottom: -2.5rem; padding: 0.5rem;}
     .btn-h600{ top: 28%; left: 36%;}
     .h700 h2{ font-size: 1.5rem; margin: 0; padding: 0;}
     .virus img , .virus-2{ display: none;}
@@ -435,7 +449,7 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
     .end h3{ font-size: 1rem;}
     .f200 p{ padding: 0;}
 
-    .h500-1{ margin: 4rem 8rem 7rem 8rem ;}
+    .h500-1{ margin: 3rem; padding: 1rem 2rem;}
     .btn-h500-1{ margin: 1.8rem -3rem; padding: 0.5rem 1rem; font-size: 0.7rem;}
     .h500{ border-radius: 20%; height: 25rem;}
     .h200{ margin: 0 -3rem;}
@@ -454,5 +468,8 @@ footer{background-color: #111111; color: #fff; padding: 3rem 1rem 0.5rem 1rem;}
 }
 
 }
+
+
+
 
 
